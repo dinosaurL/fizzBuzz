@@ -1,0 +1,21 @@
+{
+  "name": "fizzbuzz",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "fizzbuzz": "nodemon --exec babel-node src/index.js",
+    "test": "npm run test-unit",
+    "test-unit": "NODE_ENV=test mocha --require co-mocha 'tests/index.js'"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1",
+    "chai": "^4.0.2",
+    "co-mocha": "^1.2.0",
+    "mocha": "^3.4.2",
+    "nodemon": "^1.11.0"
+  }
+}
